@@ -1,0 +1,9 @@
+# Local settings and credentials
+.env
+.env.*
+.openai/
+node_modules/
+work/
+*.log
+.DS_Store
+Thumbs.db
