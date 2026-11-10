@@ -1,0 +1,13 @@
+{
+  "project": "FINCONSULT",
+  "release_version": "1.0",
+  "date": "2026-11-10",
+  "source_commit": "1b9b19b62b932d0c23d4214989a5dc65e51edc3e",
+  "original_saved_version": 7,
+  "entrypoint": "index.html",
+  "advanced_analysis": "navigator/index.html#start",
+  "runtime": "static HTML CSS JavaScript",
+  "forms": "demonstration only",
+  "real_payments": false,
+  "build_required": false
+}

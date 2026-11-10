@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101111">
+  <meta name="description" content="Финансовый консультант для собственников бизнеса и топ-менеджеров. Финансовая стратегия, управленческий учёт и защита капитала.">
+  <title>FINCONSULT — Финансы под контролем</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/consultant.webp">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="navigator-section.css">
+  <script src="app.js" defer></script>
+  <script src="carousel.js" defer></script>
+  <script type="module" src="calculator.js"></script>
+  <script src="quiz-model.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#about" aria-label="FINCONSULT — в начало">
+        <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M2 26V16h5v10H2Zm9 0V9h5v17h-5Zm9 0V2h5v24h-5Z" fill="currentColor"/></svg>
+        <span>FIN<span class="brand-accent">CONSULT</span></span>
+      </a>
+      <nav class="nav-links" id="navigation" aria-label="Основная навигация">
+        <a href="#about">О себе</a>
+        <a href="#services">Преимущества</a>
+        <a href="#diagnostic">Экспресс-тест</a>
+        <a href="#practice">Отзывы и услуги</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="navigator/index.html#start" target="_blank" rel="noopener" aria-label="Расширенный анализ деятельности компании — откроется в новой вкладке">Анализ ↗</a>
+      </nav>
+      <a class="nav-contact" href="#contact">Обсудить задачу <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="about" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> НЕЗАВИСИМЫЙ ФИНАНСОВЫЙ КОНСУЛЬТАНТ</p>
+        <h1 id="hero-title">Финансы под<br>контролем.<br><span>Бизнес —<br>на шаг вперёд.</span></h1>
+        <p class="hero-description">Помогаю собственникам бизнеса и топ-менеджерам выстраивать финансовую стратегию, увеличивать прибыль и защищать активы.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Записаться на консультацию <span aria-hidden="true">↗</span></a>
+          <a class="video-link" href="#video"><span class="small-play" aria-hidden="true">▶</span> Смотреть видео</a>
+        </div>
+        <a class="hero-quiz-link" href="#diagnostic">Не знаете, с чего начать? <span>Пройдите экспресс-тест ↗</span></a>
+        <div class="hero-caption"><span class="tiny-line"></span> Ясность в цифрах. Уверенность в решениях.</div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="assets/consultant.webp" alt="Финансовый консультант в тёмно-синем жакете за ноутбуком в светлом офисе" width="1600" height="894" fetchpriority="high">
+        <div class="photo-label"><span class="status-dot"></span> ВАШ ПАРТНЁР В ФИНАНСОВЫХ РЕШЕНИЯХ</div>
+        <div class="experience"><strong>20<span>+</span></strong><span>лет практики<br>в финансах</span><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 27 27 8M8 8h19v19" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      </div>
+    </section>
+
+    <div class="container focus-strip" aria-label="Направления работы">
+      <div><span class="strip-index">01 /</span><p>Стратегия для бизнеса</p><span aria-hidden="true">↗</span></div>
+      <div><span class="strip-index">02 /</span><p>Управление прибылью</p><span aria-hidden="true">↗</span></div>
+      <div><span class="strip-index">03 /</span><p>Защита личного капитала</p><span aria-hidden="true">↗</span></div>
+    </div>
+
+    <section class="section container services" id="services" aria-labelledby="services-title">
+      <div class="section-head">
+        <div><p class="eyebrow section-kicker">01 — ПРЕИМУЩЕСТВА</p><h2 id="services-title">За цифрами —<br><span class="muted-heading">ваши возможности.</span></h2></div>
+        <p class="section-intro">Не просто отчёты и таблицы.<br>Понятная система, которая помогает<br>принимать взвешенные решения.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-top"><span>01</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M7 32V20h7v12M17 32V12h7v20M27 32V5h7v27M5 35h31" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>20+ лет практики</h3>
+          <p>Экспертный анализ корпоративных и личных финансов. Решения, проверенные на практике в кризисных условиях.</p>
+          <button class="text-button" data-service="Опыт и финансовая диагностика">Подробнее <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span>02</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="1.5"/><path d="m20 20 13-13M26 7h7v7" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Индивидуальная стратегия</h3>
+          <p>Персональный финансовый план с учётом рисков, целей бизнеса и ваших личных приоритетов.</p>
+          <button class="text-button" data-service="Индивидуальная финансовая стратегия">Подробнее <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span>03</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="m20 4 13 5v11c0 8-13 15-13 15S7 28 7 20V9l13-5Z" stroke="currentColor" stroke-width="1.5"/><path d="m13 19 5 5 10-11" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Конфиденциальность</h3>
+          <p>Бережное отношение к коммерческой тайне и финансовой информации. Детали вашего бизнеса остаются между нами.</p>
+          <button class="text-button" data-service="Конфиденциальность и защита информации">Подробнее <span aria-hidden="true">↗</span></button>
+        </article>
+        <article class="service-card">
+          <div class="service-top"><span>04</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M5 5h11v11H5zM24 24h11v11H24zM24 5h11v11H24zM5 24h11v11H5zM16 10h8M10 16v8M30 16v8M16 30h8" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3>Системный подход</h3>
+          <p>Сквозной управленческий учёт и понятные регламенты. Чтобы видеть полную картину и держать прибыль под контролем.</p>
+          <button class="text-button" data-service="Система финансового управления">Подробнее <span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-section" id="video" aria-labelledby="video-title">
+      <div class="container video-layout">
+        <div class="video-copy"><p class="eyebrow section-kicker">02 — ЛИЧНЫЙ ПОДХОД</p><h2 id="video-title">Внимание к цифрам.<br><span class="muted-heading">Понимание бизнеса.</span></h2><p>За каждым решением — ваши цели, ваша команда и ваш бизнес. Поэтому работа начинается с диалога.</p><div class="video-note"><span></span> Познакомимся ближе</div></div>
+        <div class="video-frame">
+          <video id="consultant-video" controls playsinline preload="none" poster="assets/video-poster.jpg" aria-label="Короткое видео о работе финансового консультанта">
+            <source src="assets/consultant-video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео. <a href="assets/consultant-video.mp4">Скачать ролик</a>.
+          </video>
+          <button class="video-cover" id="video-play" aria-label="Воспроизвести видео, 10 секунд"><span class="large-play" aria-hidden="true">▶</span><span class="video-cover-footer"><span>В РАБОЧЕМ РИТМЕ</span><span>00:10 <span aria-hidden="true">↗</span></span></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container clients" id="clients" aria-labelledby="clients-title">
+      <div class="clients-heading"><p class="eyebrow section-kicker">03 — ОПЫТ СОТРУДНИЧЕСТВА</p><h2 id="clients-title">Российские компании,<br><span class="muted-heading">с которыми я работала.</span></h2></div>
+      <div class="company-grid" aria-label="Компании из портфолио">
+        <div class="company gazprom"><svg viewBox="0 0 22 30" fill="none" aria-hidden="true"><path d="M11 1C11 9 1 13 4 22c1 4 4 6 7 7-5-9 8-13 0-28Z" fill="currentColor"/><path d="M15 10c10 12 1 18-4 19 9-8 0-11 4-19Z" fill="currentColor"/></svg><span>ГАЗПРОМ<br><b>НЕФТЬ</b></span></div>
+        <div class="company alfa"><span class="alfa-mark" aria-hidden="true">А<span></span></span><span>Альфа-Банк</span></div>
+        <div class="company x5"><strong>X5</strong><span>GROUP</span></div>
+        <div class="company yandex">Яндекс</div>
+        <div class="company rostelecom"><svg viewBox="0 0 30 35" fill="none" aria-hidden="true"><path d="M2 3v28l25-14L2 3Z" stroke="currentColor" stroke-width="2"/><path d="m2 3 12 20M2 31l12-8" stroke="currentColor" stroke-width="2"/></svg><span>Ростелеком</span></div>
+        <div class="company vtb"><svg viewBox="0 0 40 30" fill="none" aria-hidden="true"><path d="M10 5h28M6 14h28M2 23h28" stroke="currentColor" stroke-width="5"/></svg><span>ВТБ</span></div>
+      </div>
+    </section>
+
+    <section class="carousel-section" id="practice" aria-labelledby="carousel-title" aria-roledescription="карусель" data-carousel>
+      <div class="container">
+        <div class="section-head carousel-heading">
+          <div><p class="eyebrow section-kicker">04 — ИНТЕРАКТИВНАЯ КАРУСЕЛЬ</p><h2 id="carousel-title">От доверия —<br><span class="muted-heading">к совместной работе.</span></h2></div>
+          <p class="carousel-intro">Отзывы, примеры решений и понятный<br>формат работы. Всё, что нужно,<br>чтобы сделать первый шаг.</p>
+        </div>
+        <p class="carousel-demo"><span class="demo-badge">ДЕМО</span><span>Учебный пример. Отзывы, портреты, показатели и цены демонстрационные.</span></p>
+
+        <div class="carousel-tabs" role="tablist" aria-label="Разделы интерактивной карусели">
+          <button class="carousel-tab" id="tab-reviews" type="button" role="tab" aria-selected="true" aria-controls="slide-reviews" tabindex="0" data-slide="0"><span>01</span> Отзывы <span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="carousel-tab" id="tab-cases" type="button" role="tab" aria-selected="false" aria-controls="slide-cases" tabindex="-1" data-slide="1"><span>02</span> Кейсы <span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="carousel-tab" id="tab-workflow" type="button" role="tab" aria-selected="false" aria-controls="slide-workflow" tabindex="-1" data-slide="2"><span>03</span> Формат работы <span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="carousel-tab" id="tab-offers" type="button" role="tab" aria-selected="false" aria-controls="slide-offers" tabindex="-1" data-slide="3"><span>04</span> Услуги <span class="tab-arrow" aria-hidden="true">↗</span></button>
+        </div>
+
+        <div class="carousel-viewport" id="carousel-viewport" tabindex="-1">
+          <div class="carousel-slide" id="slide-reviews" role="tabpanel" aria-labelledby="tab-reviews" tabindex="0" data-title="Отзывы">
+            <div class="slide-heading"><div><p class="slide-eyebrow">ОТЗЫВЫ</p><h3>Когда цифры становятся понятными.</h3></div><span class="slide-hint">Примеры карточек клиентов</span></div>
+            <div class="review-grid">
+              <article class="review-card">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <blockquote>Наконец стало понятно, сколько бизнес зарабатывает и какую сумму можно направить на развитие. Вместо разрозненных таблиц — единая картина.</blockquote>
+                <div class="review-author"><span class="review-avatar avatar-anna" role="img" aria-label="Демонстрационный портрет вымышленной клиентки"></span><div><h4>Анна М.</h4><p>Собственник торговой компании<br><span>Демонстрационный профиль</span></p></div></div>
+                <details class="review-proof"><summary>О подтверждении <span aria-hidden="true">↗</span></summary><p>Это пример отзыва, а не слова реального клиента. В рабочей версии здесь будет ссылка на оригинал, опубликованный с согласия автора.</p></details>
+              </article>
+              <article class="review-card">
+                <span class="quote-mark" aria-hidden="true">“</span>
+                <blockquote>Платёжный календарь помог заранее видеть нагрузку на деньги. Теперь обсуждаем решения на основе цифр, а не ощущений.</blockquote>
+                <div class="review-author"><span class="review-avatar avatar-dmitry" role="img" aria-label="Демонстрационный портрет вымышленного клиента"></span><div><h4>Дмитрий К.</h4><p>Руководитель сервисной компании<br><span>Демонстрационный профиль</span></p></div></div>
+                <details class="review-proof"><summary>О подтверждении <span aria-hidden="true">↗</span></summary><p>Это пример отзыва, а не слова реального клиента. В рабочей версии здесь будет ссылка на оригинал, опубликованный с согласия автора.</p></details>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-slide" id="slide-cases" role="tabpanel" aria-labelledby="tab-cases" tabindex="-1" data-title="Кейсы">
+            <div class="slide-heading"><div><p class="slide-eyebrow">ДО / ПОСЛЕ</p><h3>Сначала задача. Затем — измеримый результат.</h3></div><span class="slide-hint">Учебные финансовые модели</span></div>
+            <div class="case-grid">
+              <article class="case-card"><p class="case-sector">ТОРГОВАЯ КОМПАНИЯ / ПРИМЕР</p><h4>Вернуть контроль<br>над прибыльностью</h4><div class="case-highlight"><strong>+50<span>%</span></strong><p>к чистой прибыли<br>в учебной модели</p></div><div class="case-table"><div class="case-table-head"><span>Показатель</span><span>До</span><span>После</span></div><div><span>Прибыль / мес.</span><span>600 тыс. ₽</span><strong>900 тыс. ₽</strong></div><div><span>Рентабельность</span><span>12%</span><strong>18%</strong></div></div><p class="case-method">Учёт по направлениям, анализ затрат и контроль маржи.</p><p class="case-calculation">При выручке 5 млн ₽/мес. расходы: 4,4 → 4,1 млн ₽. Рентабельность: +6 п. п.</p></article>
+              <article class="case-card"><p class="case-sector">СЕРВИСНАЯ КОМПАНИЯ / ПРИМЕР</p><h4>Укрепить денежный<br>резерв компании</h4><div class="case-highlight"><strong>+75<span>%</span></strong><p>к денежному резерву<br>в учебной модели</p></div><div class="case-table"><div class="case-table-head"><span>Показатель</span><span>До</span><span>После</span></div><div><span>Срок оплаты</span><span>45 дней</span><strong>30 дней</strong></div><div><span>Денежный резерв</span><span>800 тыс. ₽</span><strong>1,4 млн ₽</strong></div></div><p class="case-method">Платёжный календарь, работа с дебиторской задолженностью и планирование резерва.</p><p class="case-calculation">Резерв: (1,4 − 0,8) / 0,8 = +75%. Срок оплаты: −15 дней.</p></article>
+            </div>
+            <p class="slide-footnote">Иллюстративные расчёты — не результаты реальных клиентов и не обещание доходности.</p>
+          </div>
+
+          <div class="carousel-slide" id="slide-workflow" role="tabpanel" aria-labelledby="tab-workflow" tabindex="-1" data-title="Формат работы">
+            <div class="slide-heading"><div><p class="slide-eyebrow">ФОРМАТ РАБОТЫ СО МНОЙ</p><h3>От первого аудита — до масштабирования.</h3></div><span class="slide-hint">Пример плана сотрудничества</span></div>
+            <div class="workflow-grid">
+              <article class="workflow-card"><div class="workflow-step"><span>01</span><span aria-hidden="true">→</span></div><h4>Аудит</h4><p class="workflow-time">3–5 рабочих дней</p><p class="workflow-result">Находим приоритеты и точки внимания.</p><dl><dt>Моя зона</dt><dd>Анализ отчётов, рисков и денежных потоков.</dd><dt>Ваша зона</dt><dd>Данные, документы и описание задачи.</dd></dl></article>
+              <article class="workflow-card"><div class="workflow-step"><span>02</span><span aria-hidden="true">→</span></div><h4>Стратегия</h4><p class="workflow-time">1–2 недели</p><p class="workflow-result">Превращаем цели в финансовый план.</p><dl><dt>Моя зона</dt><dd>Модель бизнеса, сценарии и план действий.</dd><dt>Ваша зона</dt><dd>Приоритеты и согласование целей.</dd></dl></article>
+              <article class="workflow-card"><div class="workflow-step"><span>03</span><span aria-hidden="true">→</span></div><h4>Внедрение</h4><p class="workflow-time">2–4 недели</p><p class="workflow-result">Создаём рабочую систему управления.</p><dl><dt>Моя зона</dt><dd>Настройка отчётности и обучение команды.</dd><dt>Ваша зона</dt><dd>Ответственный сотрудник и выполнение регламентов.</dd></dl></article>
+              <article class="workflow-card"><div class="workflow-step"><span>04</span><span aria-hidden="true">↗</span></div><h4>Масштабирование</h4><p class="workflow-time">Ежемесячно</p><p class="workflow-result">Проверяем сценарии дальнейшего роста.</p><dl><dt>Моя зона</dt><dd>Контроль показателей и разбор сценариев.</dd><dt>Ваша зона</dt><dd>Управленческие решения и обратная связь.</dd></dl></article>
+            </div>
+            <div class="slide-bottom"><p class="slide-footnote">Сроки приведены для примера. Рабочий план согласуем под вашу задачу.</p><a class="text-button" href="#contact" data-contact-topic="Хочу обсудить план работы: от аудита до масштабирования.">Обсудить мой план <span aria-hidden="true">↗</span></a></div>
+          </div>
+
+          <div class="carousel-slide" id="slide-offers" role="tabpanel" aria-labelledby="tab-offers" tabindex="-1" data-title="Услуги">
+            <div class="slide-heading"><div><p class="slide-eyebrow">УСЛУГИ</p><h3>Выберите свою точку старта.</h3></div><span class="slide-hint">Пример стоимости для макета</span></div>
+            <div class="offer-grid">
+              <article class="offer-card"><p class="offer-type">ПОНЯТЬ СИТУАЦИЮ</p><h4>Финансовая<br>диагностика</h4><p class="offer-price">15 000 <span>₽</span></p><p class="offer-description">Разбор текущих показателей, ключевых рисков и приоритетных задач.</p><ul><li>Анализ финансовых данных</li><li>Ключевые выводы и риски</li><li>План ближайших действий</li></ul><a class="button offer-button" href="#contact" data-contact-topic="Интересует финансовая диагностика (учебная цена: 15 000 ₽).">Начать с диагностики <span aria-hidden="true">↗</span></a></article>
+              <article class="offer-card offer-featured"><span class="offer-tag">СИСТЕМНОЕ РЕШЕНИЕ</span><p class="offer-type">СПЛАНИРОВАТЬ РОСТ</p><h4>Финансовая<br>стратегия</h4><p class="offer-price">45 000 <span>₽</span></p><p class="offer-description">Модель бизнеса, план денежных потоков и сценарии достижения целей.</p><ul><li>Финансовая модель бизнеса</li><li>План денежных потоков</li><li>Сценарии и приоритеты</li></ul><a class="button button-primary offer-button" href="#contact" data-contact-topic="Интересует финансовая стратегия (учебная цена: 45 000 ₽).">Обсудить стратегию <span aria-hidden="true">↗</span></a></article>
+              <article class="offer-card"><p class="offer-type">ДЕРЖАТЬ ПОД КОНТРОЛЕМ</p><h4>Сопровождение<br>бизнеса</h4><p class="offer-price">80 000 <span>₽ / мес.</span></p><p class="offer-description">Регулярный разбор отчётности, контроль показателей и поддержка команды.</p><ul><li>Разбор управленческих отчётов</li><li>Контроль ключевых показателей</li><li>Поддержка вашей команды</li></ul><a class="button offer-button" href="#contact" data-contact-topic="Интересует сопровождение бизнеса (учебная цена: 80 000 ₽/мес.).">Обсудить сопровождение <span aria-hidden="true">↗</span></a></article>
+            </div>
+            <div class="slide-bottom"><p class="slide-footnote">Цены демонстрационные и не являются действующим предложением.</p><a class="text-button" href="#calculator">Рассчитать скидку на пакет <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+
+        <div class="carousel-footer">
+          <div class="carousel-counter" aria-hidden="true"><span id="carousel-current">01</span><span class="counter-divider">/</span><span>04</span></div>
+          <div class="carousel-progress" aria-hidden="true"><span id="carousel-progress"></span></div>
+          <div class="carousel-dots" aria-label="Выбрать слайд"><button type="button" aria-label="Слайд 1: Отзывы" aria-pressed="true" data-slide="0"></button><button type="button" aria-label="Слайд 2: Кейсы" aria-pressed="false" data-slide="1"></button><button type="button" aria-label="Слайд 3: Формат работы" aria-pressed="false" data-slide="2"></button><button type="button" aria-label="Слайд 4: Услуги" aria-pressed="false" data-slide="3"></button></div>
+          <div class="carousel-arrows"><button type="button" class="carousel-prev" aria-label="Предыдущий слайд" aria-controls="carousel-viewport"><span aria-hidden="true">←</span></button><button type="button" class="carousel-next" aria-label="Следующий слайд" aria-controls="carousel-viewport"><span aria-hidden="true">→</span></button></div>
+        </div>
+        <p class="carousel-help">Листайте свайпом, стрелками или выберите раздел выше.</p>
+        <p class="sr-only" id="carousel-announcement" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="slide-footnote">JavaScript отключён. Все разделы можно посмотреть горизонтальной прокруткой.</p></noscript>
+      </div>
+    </section>
+
+
+    <section class="fq-section container" id="diagnostic" aria-labelledby="fq-title">
+      <div class="fq-heading">
+        <div>
+          <p class="eyebrow section-kicker"><span class="status-dot"></span> ВАША ТОЧКА СТАРТА</p>
+          <h2 id="fq-title">Что нужно <span>вашим финансам?</span></h2>
+          <p class="fq-intro">Ответьте на 10 вопросов — и получите персональный<br class="fq-desktop-break"> маршрут работы: услуги, формат и примерные сроки.</p>
+        </div>
+        <div class="fq-meta"><span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg> Около 3 минут</span><span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="8" width="12" height="9" rx="1"/><path d="M7 8V6a3 3 0 0 1 6 0v2"/></svg> Без регистрации</span></div>
+      </div>
+
+      <div class="fq-shell" id="fq-shell">
+        <aside class="fq-sidebar" aria-label="Этапы теста">
+          <div class="fq-side-top"><span class="fq-mini-logo" aria-hidden="true">↗</span><span>FINCONSULT<br><small>ЭКСПРЕСС-ДИАГНОСТИКА</small></span></div>
+          <ol class="fq-steps">
+            <li class="is-current" data-fq-step="0" aria-current="step"><span class="fq-step-no">01</span><div>Ваша ситуация<small>С чего начнём</small></div><span class="fq-step-check" aria-hidden="true">✓</span></li>
+            <li data-fq-step="1"><span class="fq-step-no">02</span><div>Финансовая картина<small>Цифры, процессы и цели</small></div><span class="fq-step-check" aria-hidden="true">✓</span></li>
+            <li data-fq-step="2"><span class="fq-step-no">03</span><div>Работа вместе<small>Формат и поддержка</small></div><span class="fq-step-check" aria-hidden="true">✓</span></li>
+          </ol>
+          <div class="fq-side-note"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 3 11 4v10c0 7-11 12-11 12S5 24 5 17V7l11-4Z"/><path d="m11 16 4 4 7-8"/></svg><p>Только о вашей ситуации.<br><span>Суммы, документы и контакты для теста не нужны.</span></p></div>
+          <div class="fq-side-bottom"><span class="fq-side-line"></span> От ясности — к решениям.</div>
+        </aside>
+
+        <div class="fq-main" id="fq-main">
+          <div class="fq-progress-head"><span id="fq-category">ВАША СИТУАЦИЯ</span><span><strong id="fq-current">01</strong><span class="fq-count-divider"> / </span>10</span></div>
+          <div class="fq-progress" id="fq-progress" role="progressbar" aria-label="Прогресс теста" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i class="is-current"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <form id="fq-form">
+            <fieldset class="fq-fieldset" id="fq-fieldset">
+              <legend id="fq-question" tabindex="-1">На каком этапе сейчас ваш бизнес?</legend>
+              <p class="fq-hint" id="fq-hint">Выберите один ответ, который ближе к вашей ситуации.</p>
+              <div class="fq-options" id="fq-options"></div>
+            </fieldset>
+            <div class="fq-controls"><button class="fq-back" type="button" id="fq-back" disabled><span aria-hidden="true">←</span> Назад</button><span class="fq-select-hint" id="fq-select-hint">Выберите один вариант</span><button class="fq-next" type="submit" id="fq-next" disabled>Далее <span aria-hidden="true">→</span></button></div>
+          </form>
+          <div class="fq-bottom-note"><span aria-hidden="true">✦</span> Ваши ответы помогут выбрать подходящий первый шаг.</div>
+        </div>
+      </div>
+      <div class="fq-result" id="fq-result" hidden tabindex="-1" aria-labelledby="fq-result-title"></div>
+      <p class="fq-announcement sr-only" id="fq-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="fq-section-footer">
+        <p class="fq-disclaimer">Результат — предварительный ориентир. Точный состав услуг и сроки согласуем после знакомства с вашей задачей.</p>
+        <a class="button fq-calculator-link" href="#calculator">Перейти к калькулятору <span aria-hidden="true">↓</span></a>
+      </div>
+      <noscript><p class="fq-nojs">Для прохождения теста включите JavaScript. Или <a href="#contact">расскажите о задаче в форме ниже</a>.</p></noscript>
+    </section>
+
+    <div class="container analysis-entry" id="business-navigator">
+      <a class="button button-primary analysis-entry-button" href="navigator/index.html#start" target="_blank" rel="noopener" aria-describedby="analysis-entry-note"><span class="analysis-button-label">Расширенный анализ деятельности компании</span><span aria-hidden="true">↗</span></a>
+      <p id="analysis-entry-note">Откроется в новой вкладке</p>
+    </div>
+
+    <section class="section container calculator-section" id="calculator" aria-labelledby="calculator-title">
+      <div class="section-head calculator-heading"><div><p class="eyebrow section-kicker">05 — КАЛЬКУЛЯТОР ПАКЕТА</p><h2 id="calculator-title">Больше задач —<br><span class="muted-heading">выгоднее вместе.</span></h2></div><p class="calculator-intro">Выберите услуги и срок работы.<br>Узнайте максимальную скидку<br>и минимальную цену вашего пакета.</p></div>
+      <p class="calculator-demo"><span class="demo-badge">ДЕМО</span><span>Учебные цены и правила. Общая скидка — не более 25%.</span></p>
+      <div class="calculator-layout">
+        <form class="calculator-form" id="discount-form" novalidate>
+          <fieldset class="calculator-services"><legend><span class="calc-step">01</span> Выберите услуги</legend><p class="calc-hint">Цены из блока услуг уже подставлены. Их можно изменить для своего расчёта.</p>
+            <div class="calc-service-row is-selected" data-calc-service="diagnostics"><div class="calc-service-main"><label class="calc-service-label" for="calc-select-diagnostics"><input type="checkbox" id="calc-select-diagnostics" name="services" value="diagnostics" checked><span><strong>Финансовая диагностика</strong><span>Разовый разбор финансов и рисков</span></span></label><div class="calc-price-field"><label for="calc-price-diagnostics">Базовая цена, ₽</label><input type="text" id="calc-price-diagnostics" aria-label="Базовая цена финансовой диагностики в рублях, разово" name="price-diagnostics" value="15 000" inputmode="numeric" maxlength="12" autocomplete="off" aria-describedby="calc-error-diagnostics"><span>один раз</span></div></div><p class="calc-error" id="calc-error-diagnostics" hidden></p></div>
+            <div class="calc-service-row is-selected" data-calc-service="strategy"><div class="calc-service-main"><label class="calc-service-label" for="calc-select-strategy"><input type="checkbox" id="calc-select-strategy" name="services" value="strategy" checked><span><strong>Финансовая стратегия</strong><span>Модель бизнеса и план действий</span></span></label><div class="calc-price-field"><label for="calc-price-strategy">Базовая цена, ₽</label><input type="text" id="calc-price-strategy" aria-label="Базовая цена финансовой стратегии в рублях, разово" name="price-strategy" value="45 000" inputmode="numeric" maxlength="12" autocomplete="off" aria-describedby="calc-error-strategy"><span>один раз</span></div></div><p class="calc-error" id="calc-error-strategy" hidden></p></div>
+            <div class="calc-service-row is-selected" data-calc-service="support"><div class="calc-service-main"><label class="calc-service-label" for="calc-select-support"><input type="checkbox" id="calc-select-support" name="services" value="support" checked><span><strong>Сопровождение бизнеса</strong><span>Регулярный контроль и поддержка</span></span></label><div class="calc-price-field"><label for="calc-price-support">Базовая цена, ₽</label><input type="text" id="calc-price-support" aria-label="Базовая цена сопровождения бизнеса в рублях за месяц" name="price-support" value="80 000" inputmode="numeric" maxlength="12" autocomplete="off" aria-describedby="calc-error-support"><span>за месяц</span></div></div><p class="calc-error" id="calc-error-support" hidden></p></div>
+          </fieldset>
+
+          <fieldset class="calculator-duration" id="calc-duration"><legend><span class="calc-step">02</span> Срок сопровождения</legend><div class="calc-duration-heading"><label for="calc-months">Продолжительность работы</label><output id="calc-months-output" for="calc-months">3 месяца</output></div><input class="calc-range" id="calc-months" name="months" type="range" min="1" max="12" step="1" value="3" aria-describedby="calc-duration-hint" aria-valuetext="3 месяца"><div class="calc-range-labels" aria-hidden="true"><span>1 месяц</span><span>12 месяцев</span></div><div class="calc-term-options" aria-label="Быстрый выбор срока"><button type="button" data-calc-months="1" aria-pressed="false">1 мес.</button><button type="button" data-calc-months="3" aria-pressed="true">3 мес.</button><button type="button" data-calc-months="6" aria-pressed="false">6 мес.</button><button type="button" data-calc-months="12" aria-pressed="false">12 мес.</button></div><p class="calc-hint" id="calc-duration-hint">Диагностика и стратегия учитываются один раз. Срок меняет только стоимость сопровождения и бонус за длительность.</p></fieldset>
+
+          <details class="calc-rules"><summary>Как растёт скидка <span aria-hidden="true">+</span></summary><div class="calc-rules-grid"><div><h3>За пакет услуг</h3><p>1 услуга <strong>0%</strong></p><p>2 услуги <strong>+5%</strong></p><p>3 услуги <strong>+10%</strong></p></div><div><h3>За срок сопровождения</h3><p>1–2 месяца <strong>0%</strong></p><p>3–5 месяцев <strong>+5%</strong></p><p>6–11 месяцев <strong>+10%</strong></p><p>12 месяцев <strong>+15%</strong></p></div></div><p class="calc-rules-note">Проценты складываются, итог — до 25%. Бонус за срок доступен только с сопровождением. Скидка применяется ко всей стоимости выбранного пакета.</p></details>
+          <div class="calc-form-actions"><button class="button button-primary" type="submit" id="calc-submit" disabled>Рассчитать скидку <span aria-hidden="true">↗</span></button><button class="calc-reset" type="reset">Сбросить</button></div><p class="calc-auto-note">Суммы обновляются при изменении параметров.</p>
+          <p class="calc-error calc-selection-error" id="calc-selection-error" hidden></p>
+          <noscript><p class="calc-error">Для расчёта скидки включите JavaScript в браузере.</p></noscript>
+        </form>
+
+        <aside class="calculator-result" id="calc-result" aria-labelledby="calc-result-title" tabindex="-1">
+          <div class="calc-result-top"><p class="eyebrow" id="calc-result-title">ВАШ ПАКЕТ</p><span class="calc-discount-badge" id="calc-badge">до 15%</span></div>
+          <div id="calc-result-values"><p class="calc-total-label">Минимальная цена пакета</p><p class="calc-minimum" id="calc-minimum">255 000 <span>₽</span></p><p class="calc-period" id="calc-period">За весь пакет, включая 3 месяца сопровождения</p><div class="calc-summary"><div><span>Стоимость без скидки</span><span id="calc-base-total">300 000 ₽</span></div><div><span>Максимальная скидка</span><strong id="calc-discount-percent">до 15%</strong></div><div class="calc-saving-row"><span>Ваша экономия</span><strong id="calc-savings">45 000 ₽</strong></div></div><div class="calc-bonus-breakdown"><div><span>За пакет услуг</span><strong id="calc-package-bonus">+10%</strong></div><div><span>За длительность</span><strong id="calc-duration-bonus">+5%</strong></div></div><div class="calc-cap-track" aria-hidden="true"><span id="calc-cap-fill"></span></div><p class="calc-cap-label" id="calc-cap-label">15% из максимально возможных 25%</p><details class="calc-composition"><summary>Что входит в расчёт <span aria-hidden="true">+</span></summary><ul id="calc-items"><li><span>Диагностика · разово</span><strong>15 000 ₽</strong></li><li><span>Стратегия · разово</span><strong>45 000 ₽</strong></li><li><span>Сопровождение · 3 мес.</span><strong>240 000 ₽</strong></li></ul></details><p class="calc-rounding">Минимум по учебным правилам. Цена округляется вверх до целого рубля.</p></div>
+          <div class="calc-empty" id="calc-empty" hidden><span aria-hidden="true">↗</span><h3 id="calc-empty-title">Соберите свой пакет</h3><p id="calc-empty-description">Выберите хотя бы одну услугу — здесь появится расчёт.</p></div>
+          <a class="button button-primary calc-proposal" href="#contact" id="calc-proposal">Обсудить этот пакет <span aria-hidden="true">↗</span></a><p class="calc-result-note">Выбранные услуги и расчёт добавятся к вашей заявке. Форма учебная: данные не отправляются.</p>
+        </aside>
+      </div>
+      <p class="sr-only" id="calc-announcement" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+
+    <section class="section container faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-heading"><p class="eyebrow section-kicker">06 — ВОПРОСЫ И ОТВЕТЫ</p><h2 id="faq-title">Возможно,<br>вы тоже об этом<br><span class="muted-heading">думаете.</span></h2><p>У каждой ситуации свои детали.<br>Начнём с того, что важно вам.</p><a class="text-button" href="#contact">Задать свой вопрос <span aria-hidden="true">↗</span></a></div>
+      <div class="faq-list">
+        <details open><summary><span class="faq-number">01</span><span>Как выстроить прозрачный управленческий учёт в бизнесе?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer">Помогаю внедрить отчёты ДДС, ОПиУ и Баланс, наладить автоматизацию в 1С/Excel и обучить команду, чтобы получать актуальные цифры вовремя.</div></details>
+        <details><summary><span class="faq-number">02</span><span>Как избавиться от кассовых разрывов и оптимизировать расходы?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer">Проводим экспресс-аудит платёжного календаря, находим скрытые издержки, перестраиваем работу с дебиторской задолженностью и кредиторами.</div></details>
+        <details><summary><span class="faq-number">03</span><span>Как безопасно выводить дивиденды и масштабировать прибыль?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer">Формируем финансовую модель бизнеса, определяем точку безубыточности и долю чистой прибыли, доступную к распределению без риска для компании.</div></details>
+        <details><summary><span class="faq-number">04</span><span>Как структурировать личный и корпоративный капитал?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-answer">Разрабатываем персональную стратегию, разделяем личные средства и деньги бизнеса, учитываем юридические и налоговые риски.</div></details>
+      </div>
+    </section>
+
+    <section class="contact-section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow">07 — ПЕРВЫЙ ШАГ</p><h2 id="contact-title">Ваш следующий<br>шаг — к ясности<br>в финансах.</h2><p>Расскажите о своей задаче.<br>Разберёмся, с чего начать.</p><svg class="contact-arrow" viewBox="0 0 94 94" fill="none" aria-hidden="true"><path d="M9 85 85 9M9 9h76v76" stroke="currentColor" stroke-width="2"/></svg></div>
+      <form class="contact-form" id="contact-form">
+        <h3>Записаться на консультацию</h3>
+        <p class="form-intro">Оставьте свои контакты и коротко опишите задачу.</p>
+        <div class="field"><label for="name">Как к вам обращаться <span>*</span></label><input id="name" name="name" type="text" placeholder="Ваше имя" autocomplete="name" required minlength="2" maxlength="100"></div>
+        <div class="field"><label for="email">Электронная почта <span>*</span></label><input id="email" name="email" type="email" placeholder="you@company.ru" autocomplete="email" required maxlength="200"></div>
+        <div class="field"><label for="message">О чём хотели бы поговорить</label><textarea id="message" name="message" rows="3" placeholder="Несколько слов о вашей задаче" maxlength="2000"></textarea></div>
+        <button class="button button-primary form-submit" type="submit">Оставить заявку <span aria-hidden="true">↗</span></button>
+        <p class="demo-note"><span></span> Учебная версия. Данные никуда не отправляются.</p>
+        <div class="form-status" id="form-status" role="status" tabindex="-1" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer"><a class="brand" href="#about"><span>FIN<span class="brand-accent">CONSULT</span></span></a><p>Финансовые решения с опорой на ваши цели.</p><span>© 2026 · Учебный проект</span><a class="back-top" href="#about" aria-label="Вернуться в начало">↑</a></footer>
+
+  <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="Закрыть окно">×</button>
+    <p class="eyebrow section-kicker">FINCONSULT / ПОДХОД К РАБОТЕ</p>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <ul id="dialog-list"></ul>
+    <a class="button button-primary" href="#contact" id="dialog-contact">Обсудить задачу <span aria-hidden="true">↗</span></a>
+  </dialog>
+</body>
+</html>
