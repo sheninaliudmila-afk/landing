@@ -121,7 +121,7 @@
     const errors = { ...validateDates(input.previousDate, input.currentDate).errors };
     const unit = unitById(input.unit);
     if (!unit) errors.unit = 'Выберите рубли, тысячи или миллионы рублей.';
-    if (!['demo', 'own'].includes(input.mode)) errors.mode = 'Выберите учебный пример или свои данные.';
+    if (!['demo', 'own'].includes(input.mode)) errors.mode = 'Выберите пример или свои данные.';
     if (!isObject(input.balances)) errors.balances = 'Нужен набор остатков на две даты.';
     if (!isObject(input.flows)) errors.flows = 'Нужен набор показателей за период.';
     const limit = unit ? maxAmount(input.unit) : MAX_RUBLES;
@@ -462,7 +462,7 @@
       'Просьба отдельно пояснить курсовые, неденежные и прочие корректировки, изменение периметра или учётных правил. Не смешивать операционные расчёты с инвестиционными и финансовыми статьями.',
       'Если суммы нет или её нужно уточнить, отметьте «неизвестно»; ноль указывайте только при подтверждённом отсутствии суммы.',
       'Изменение основных средств не заменяет CAPEX; изменение кредитов не заменяет денежные получения и погашения; изменение нераспределённой прибыли не заменяет чистую прибыль периода.',
-      'Для прототипа достаточно подготовить суммы: финансовые документы в навигатор не загружаются.'
+      'Для навигатора достаточно подготовить суммы: финансовые документы в навигатор не загружаются.'
     ].join('\n');
   }
   return { version, MAX_RUBLES, units, balanceDefinitions, flowDefinitions, demoInput, createEmptyInput, cloneInput, normalizeInput, upgradeInput, isInputShape, validateDates, validateInput, maxAmount, convertUnit, convertUnits: convertUnit, analyze, accountantRequest };

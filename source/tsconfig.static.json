@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/main.tsx",
+    "src/vite-env.d.ts",
+    "src/Landing.tsx",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ]
+}

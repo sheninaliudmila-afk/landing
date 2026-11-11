@@ -74,7 +74,7 @@
         {id:'risks',title:'Риски',mark:'◇',empty:'По заполненным данным пока недостаточно оснований, чтобы описать конкретные риски.'},
         {id:'solutions',title:'Возможные решения',mark:'→',empty:'По заполненным данным пока недостаточно оснований для конкретных решений. Уточним показатели и контекст бизнеса.'}
       ];
-      $('[data-period-qualitative-summary]').innerHTML=`<p class="pd-qualifier" data-analysis-qualifier>${state.mode==='demo'?'Разбор учебного примера':'Предварительный разбор ваших данных'}</p><div class="pd-qual-grid">${groups.map(group=>{
+      $('[data-period-qualitative-summary]').innerHTML=`<p class="pd-qualifier" data-analysis-qualifier>${state.mode==='demo'?'Разбор примера':'Предварительный разбор ваших данных'}</p><div class="pd-qual-grid">${groups.map(group=>{
         const items=Array.isArray(summary[group.id])?summary[group.id].slice(0,3):[];
         return `<article class="pd-qual-card" data-qualitative-group="${group.id}"><h4><span aria-hidden="true">${group.mark}</span>${group.title}</h4>${items.length?`<ul>${items.map(item=>`<li data-qualitative-item="${e(item.id)}"><p>${e(item.text)}</p>${Object.keys(item.evidence||{}).length?`<details class="pd-qual-evidence"><summary>Основание</summary><p>${Object.entries(item.evidence).map(([id,value])=>`${e(metrics.get(id)?.title||id)}: ${e(metricValue({...metrics.get(id),value}))}`).join('; ')}.</p></details>`:''}</li>`).join('')}</ul>`:`<p class="pd-qual-empty">${group.empty}</p>`}</article>`;
       }).join('')}</div><div class="pd-qual-footer"><p>Предварительные наблюдения по введённым цифрам. Финальные выводы требуют проверки данных и контекста.</p><button class="pd-button" type="button" data-nav="meeting" data-analysis-meeting>Обсудить эти вопросы <span aria-hidden="true">→</span></button></div>`;
@@ -100,7 +100,7 @@
       [...fields.map(input=>input.dataset.periodField),'previousDate','currentDate'].forEach(path=>error(path,errors[path]));
       root.querySelectorAll('[data-period-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.periodMode===state.mode)));
       $('[data-period-reset]').firstChild.textContent=state.mode==='own'?'Очистить данные ':'Вернуть пример ';
-      $('[data-period-mode-note]').textContent=state.mode==='own'?'Ваши данные. Неизвестные показатели можно оставить пустыми. Значения остаются в этой вкладке и не отправляются.':'Учебный пример на условных цифрах. Изменяйте значения, чтобы понять, как связаны показатели.';
+      $('[data-period-mode-note]').textContent=state.mode==='own'?'Ваши данные. Неизвестные показатели можно оставить пустыми. Значения остаются в этой вкладке и не отправляются.':'Пример на условных цифрах. Изменяйте значения, чтобы понять, как связаны показатели.';
       $('[data-period-mode-note]').dataset.mode=state.mode;
       $('[data-period-unit-label]').textContent=unitTitle();
       $('[data-period-previous-heading]').textContent=previous?`На ${previous}`:'На прошлую дату';

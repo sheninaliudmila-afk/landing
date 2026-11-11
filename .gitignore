@@ -1,9 +1,7 @@
-# Local settings and credentials
+source/node_modules/
+source/dist/
+source/dist-pages/
 .env
 .env.*
-.openai/
-node_modules/
-work/
-*.log
+!.env.example
 .DS_Store
-Thumbs.db
