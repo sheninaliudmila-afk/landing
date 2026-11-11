@@ -4,6 +4,7 @@
 
 - Сайт: https://sheninaliudmila-afk.github.io/landing/
 - Готовый архив для домена: [FINCONSULT_domain_ready_2026-11-11.zip](downloads/FINCONSULT_domain_ready_2026-11-11.zip)
+- Скачать исходники и инструкции: [FINCONSULT_sources_and_instructions_2026-11-11.zip](downloads/FINCONSULT_sources_and_instructions_2026-11-11.zip)
 - Редактируемое приложение: [source/](source/README.md)
 - Что изменилось: [CHANGES](source/CHANGES-2026-11-11.md)
 - Приём заявок и серверный код: [DEPLOYMENT](source/DEPLOYMENT.md)
